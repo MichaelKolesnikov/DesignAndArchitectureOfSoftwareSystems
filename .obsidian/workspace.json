@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b05315585647f83b",
+        "id": "5c5adc9b21a0b40b",
         "type": "tabs",
         "children": [
           {
-            "id": "7464a91fc2a1ccf4",
+            "id": "6ab7f8f91b247340",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "report/ReportPartPrompt.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "ReportPartPrompt"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "report/ReportPartPrompt.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for ReportPartPrompt"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "report/ReportPartPrompt.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from ReportPartPrompt"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "report/ReportPartPrompt.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of ReportPartPrompt"
             }
           }
         ]
@@ -176,33 +183,38 @@
       "bases:Create new base": false
     }
   },
-  "active": "7464a91fc2a1ccf4",
+  "active": "6ab7f8f91b247340",
   "lastOpenFiles": [
-    "report/src/prepared/p.md",
-    "report/src/prepared/o.md",
-    "report/src/prepared/n.md",
-    "report/src/prepared/m.md",
-    "report/src/prepared/l.md",
-    "report/src/prepared/k.md",
-    "report/src/prepared/j.md",
-    "report/src/prepared/i.md",
-    "report/src/prepared/h.md",
-    "report/src/prepared/g.md",
-    "report/src/prepared/f.md",
-    "report/src/prepared/e.md",
-    "report/src/prepared/d.md",
-    "report/src/prepared/c.md",
-    "report/src/prepared/b.md",
-    "report/src/prepared/a.md",
+    "RepotParts/1.md",
+    "report/ReportPartPrompt.md",
+    "report/ExplainedContents.md",
+    "RepotParts/2.3.md",
+    "RepotParts/2.1.md",
+    "report/Contents.md",
+    "RepotParts/5.md",
+    "RepotParts/4.md",
+    "RepotParts/3.6.md",
+    "RepotParts/3.5.md",
+    "RepotParts/3.4.md",
+    "RepotParts/3.3.md",
+    "RepotParts/3.2.md",
+    "RepotParts/3.1.md",
+    "RepotParts/2.5.md",
+    "RepotParts/2.4.md",
+    "report/ContetnsPrompt.md",
+    "RepotParts/2.2.md",
+    "Untitled.md",
+    "Темы.md",
+    "RepotParts",
+    "report/hint.md",
+    "report/theme.md",
+    "ExplainedContents.md",
+    "Contents.md",
     "report/src/src.md",
+    "report/src/prepared/p.md",
     "report/src/methods.pdf",
     "report/src/comparStudyToLLMLLM.pdf",
     "report/src/comparLLM.pdf",
-    "report/src/ibmRUPtoLLM.pdf",
-    "report/src/prepared/{o-p}.md",
-    "Темы.md",
-    "report/hint.md",
-    "report/Prompt.md",
-    "report/theme.md"
+    "report/src/ibmRUPtoLLM.pdf"
   ]
 }
