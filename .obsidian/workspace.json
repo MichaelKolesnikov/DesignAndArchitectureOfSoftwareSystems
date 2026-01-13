@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9a502d50050e69ed",
+        "id": "b05315585647f83b",
         "type": "tabs",
         "children": [
           {
-            "id": "0c1b25cad66164a5",
+            "id": "7464a91fc2a1ccf4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -176,12 +176,29 @@
       "bases:Create new base": false
     }
   },
-  "active": "0c1b25cad66164a5",
+  "active": "7464a91fc2a1ccf4",
   "lastOpenFiles": [
     "report/src/prepared/p.md",
     "report/src/prepared/o.md",
     "report/src/prepared/n.md",
+    "report/src/prepared/m.md",
+    "report/src/prepared/l.md",
+    "report/src/prepared/k.md",
+    "report/src/prepared/j.md",
+    "report/src/prepared/i.md",
+    "report/src/prepared/h.md",
+    "report/src/prepared/g.md",
+    "report/src/prepared/f.md",
+    "report/src/prepared/e.md",
+    "report/src/prepared/d.md",
+    "report/src/prepared/c.md",
+    "report/src/prepared/b.md",
+    "report/src/prepared/a.md",
     "report/src/src.md",
+    "report/src/methods.pdf",
+    "report/src/comparStudyToLLMLLM.pdf",
+    "report/src/comparLLM.pdf",
+    "report/src/ibmRUPtoLLM.pdf",
     "report/src/prepared/{o-p}.md",
     "Темы.md",
     "report/hint.md",
