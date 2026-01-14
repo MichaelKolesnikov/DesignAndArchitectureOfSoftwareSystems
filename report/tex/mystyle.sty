@@ -1,9 +1,11 @@
 \usepackage{fontspec}
 \setmainfont{Times New Roman}[Scale=1.0]
+\setsansfont{Times New Roman} 
+\setmonofont{Times New Roman} 
 \usepackage[russian]{babel}
 \usepackage{hyphenat}
 
-\usepackage[colorlinks=true, urlcolor=blue, linkcolor=blue]{hyperref}
+\usepackage[colorlinks=true, urlcolor=black, linkcolor=black, citecolor=black]{hyperref}
 \usepackage{appendix}
 
 \usepackage[table]{xcolor}
@@ -15,7 +17,14 @@
 
 \usepackage{graphicx}
 \usepackage{geometry}
-\geometry{a4paper}
+\geometry{
+    a4paper,
+    left=3cm,      % левое поле 3 см
+    right=1cm,     % правое поле 1 см
+    top=2cm,       % верхнее поле 2 см
+    bottom=2cm,    % нижнее поле 2 см
+    bindingoffset=0cm
+}
 
 \usepackage{verbatim}
 \usepackage{pdfpages}
@@ -24,6 +33,17 @@
 \usepackage{xcolor}
 
 \usepackage[backend=biber, style=numeric]{biblatex}
+% Изменяем формат меток библиографии: 1. вместо [1]
+\DeclareFieldFormat{labelnumberwidth}{#1.}
+\DeclareFieldFormat{labelnumber}{#1}
+\setlength{\bibhang}{1.25cm}
+
+% Настройка оглавления с точками
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+
+\usepackage[nopatch=footnote]{microtype} % автопереносы
 
 % Настройка шрифтов и интервалов
 \usepackage{setspace}
@@ -32,9 +52,12 @@
 % Основной шрифт 12pt
 \renewcommand{\normalsize}{\fontsize{12}{14.4}\selectfont}  % 12pt с учетом 1.5 интервала
 
+\usepackage{indentfirst}
+
 % Section 14pt, левый отступ как у абзацев
 \usepackage{titlesec}
-\setlength{\parindent}{1.25cm}  % Стандартный отступ абзаца
+\setlength{\parindent}{1.25cm}  % Красная строка 1.25 см (как в Word)
+\setlength{\parskip}{0pt}
 
 \titleformat{\section}
   {\fontsize{14}{16.8}\bfseries}  % 14pt с 1.5 интервалом, без \filleft
@@ -42,8 +65,8 @@
 
 \titlespacing*{\section}
   {1.25cm}  % Левый отступ = parindent абзацев
-  {0pt}     % Верхний отступ перед
-  {12pt}    % Нижний отступ после
+  {*1}     % Верхний отступ перед
+  {*1}    % Нижний отступ после
 
 % Subsection 13pt, левый отступ как у абзацев
 \titleformat{\subsection}
@@ -52,9 +75,14 @@
 
 \titlespacing*{\subsection}
   {1.25cm}  % Левый отступ = parindent абзацев
-  {0pt}     % Верхний отступ перед
-  {10pt}    % Нижний отступ после
+  {*1}     % Верхний отступ перед
+  {*1}    % Нижний отступ после
 
 
 % Установка базового размера шрифта
 \AtBeginDocument{\normalsize}
+
+\AtBeginBibliography{%
+  \let\emph\normalfont  % переназначаем \emph на обычный шрифт
+  \let\textit\normalfont % переназначаем \textit на обычный шрифт
+}
