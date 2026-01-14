@@ -1,0 +1,60 @@
+\usepackage{fontspec}
+\setmainfont{Times New Roman}[Scale=1.0]
+\usepackage[russian]{babel}
+\usepackage{hyphenat}
+
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=blue]{hyperref}
+\usepackage{appendix}
+
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath}
+
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a4paper}
+
+\usepackage{verbatim}
+\usepackage{pdfpages}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\usepackage[backend=biber, style=numeric]{biblatex}
+
+% Настройка шрифтов и интервалов
+\usepackage{setspace}
+\onehalfspacing  % Интервал 1.5 везде
+
+% Основной шрифт 12pt
+\renewcommand{\normalsize}{\fontsize{12}{14.4}\selectfont}  % 12pt с учетом 1.5 интервала
+
+% Section 14pt, левый отступ как у абзацев
+\usepackage{titlesec}
+\setlength{\parindent}{1.25cm}  % Стандартный отступ абзаца
+
+\titleformat{\section}
+  {\fontsize{14}{16.8}\bfseries}  % 14pt с 1.5 интервалом, без \filleft
+  {\thesection}{1em}{}
+
+\titlespacing*{\section}
+  {1.25cm}  % Левый отступ = parindent абзацев
+  {0pt}     % Верхний отступ перед
+  {12pt}    % Нижний отступ после
+
+% Subsection 13pt, левый отступ как у абзацев
+\titleformat{\subsection}
+  {\fontsize{13}{15.6}\bfseries}  % 13pt с 1.5 интервалом, без \filleft
+  {\thesubsection}{1em}{}
+
+\titlespacing*{\subsection}
+  {1.25cm}  % Левый отступ = parindent абзацев
+  {0pt}     % Верхний отступ перед
+  {10pt}    % Нижний отступ после
+
+
+% Установка базового размера шрифта
+\AtBeginDocument{\normalsize}

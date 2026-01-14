@@ -59,7 +59,7 @@ def create_and_process_files(start_letter='a', end_letter='p'):
         
         for letter, index in replacement_dict.items():
             pattern = f'\\[{letter}\\]'
-            content = re.sub(pattern, f"[{index + 1}]", content)
+            content = re.sub(pattern, r"\\cite{ref" + str(index + 1) + "}", content)
         
         with open(txt_file, 'w', encoding='utf-8') as f:
             f.write(content)
